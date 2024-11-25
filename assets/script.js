@@ -8,6 +8,19 @@ const toppings = [
   "repeating-linear-gradient(45deg, #ed6a5a, #f4f1bb, #9bc1bc)", // Random Topping 3
 ];
 
+function playMusic() {
+  const backgroundMusic = document.getElementById('background-music');
+  const musicButton = event.target;
+  
+  if (backgroundMusic.paused) {
+    backgroundMusic.play();
+    musicButton.textContent = 'Pause Musik';
+  } else {
+    backgroundMusic.pause();
+    musicButton.textContent = 'Play Musik';
+  }
+}
+
 // Fungsi untuk mengenerate topping acak
 function generateRandomTopping() {
   const popsicles = document.querySelectorAll(".popsicle");
@@ -34,3 +47,14 @@ function getRandomColor() {
   }
   return color;
 }
+
+ // Fungsi untuk kontrol musik
+ function toggleMusic() {
+  var music = document.getElementById('backgroundMusic');
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
+}
+

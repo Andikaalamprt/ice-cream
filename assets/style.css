@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f8db94;
+  background-color: #9370DB;
   font-family: "Poppins", sans-serif;
 }
 
@@ -34,20 +34,21 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
 button {
-  background-color: #f4c531;
+  background-color: #FF69B4; /* Warna pink */
   border: none;
   padding: 10px 20px;
   margin: 5px;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Menambahkan transisi */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background-color: #e0b020; /* Warna saat di-hover */
-  transform: scale(1.05); /* Membesarkan tombol sedikit saat di-hover */
+  background-color: #FF1493; /* Warna pink yang sedikit lebih gelap untuk efek hover */
+  transform: scale(1.05);
 }
 
 .popsicle {
@@ -105,4 +106,31 @@ button:hover {
   background-color: #5e3a16;
   background-image: radial-gradient(#c39a6b 4px, transparent 4px);
   background-size: 30px 30px;
+}
+
+.music-container {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.button-music button {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background-color: #FF69B4;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+  transform: rotate(180deg);
+}
+
+.button-music button:hover {
+  background-color: #FF1493;
+  transform: rotate(180deg) scale(1.05);
 }

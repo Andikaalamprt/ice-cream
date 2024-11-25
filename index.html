@@ -8,6 +8,17 @@
 </head>
 
 <body>
+  <div class="music-container">
+    <audio id="background-music">
+      <source src="C:/Users/andik/Downloads/project/ice-cream/lagu.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="button-music">
+      <button onclick="playMusic()">Play ini dulu</button>
+    </div>
+  </div>
+
   <div class="container">
     <div class="popsicle popsicle-1"></div>
     <div class="popsicle popsicle-2"></div>
@@ -20,7 +31,7 @@
     <button onclick="changeColor('popsicle-3')">Ubah Rasa Ice Cream 3</button>
   </div>
   <div class="button">
-    <button onclick="generateRandomTopping()">Pilih Random Topping</button> <!-- Button baru -->
+    <button onclick="generateRandomTopping()">Pilih Random Topping</button>
   </div>
 
   <script src="./assets/script.js"></script>
